@@ -1,16 +1,15 @@
 export const stylesVar = {
 	// 🎨 Cores principais
 	cWhite: "rgba(251, 237, 230, 1)",
-	cBlack: "rgba(0, 0, 10, 1)",
-	cPurple: "#4f3cccff",
-	cOrange: "rgba(215, 61, 37, 1)",
+	cBlack: "#01010fff",
+	cPurple: "#3326ebff",
 
 	// 🩶 Cores secundárias e neutras
 	cGray: "#ccc",
-	cGrayLight: "#f0f0f0",
-	cGrayDark: "#1a1a1a",
-	cBgDark: "#0a0a0a",
-	cBgLight: "#fafafa",
+	cGrayDark: "#0a054ed6",
+	cGrayLight: "#4639ffff",
+	cBgDark: "#050421",
+	cBgLight: "#3326ebff",
 
 	// 💬 Cores de texto e links
 	cText: "rgba(251, 237, 230, 0.95)",
@@ -18,13 +17,13 @@ export const stylesVar = {
 	cLink: "#d7bfff",
 
 	headerHeight: "100px",
-	cHover: "#8a7af0",
-	cHover2: "#010102ca",
+	cHover: "#453ae8ff",
+	cHover2: "#050421",
 
 	// 🧱 Bordas e radius
 	borderRadius: "10px",
 	borderRadiusLarge: "20px",
-	borderColor: "rgba(255,255,255,0.1)",
+	borderColor: "rgba(88, 74, 253, 0.1)",
 	// ✍️ Fontes
 	fFH1: "'Outfit', Calibri , sans-serif",
 	fFp: "'Manrope', Calibri , sans-serif",
@@ -42,11 +41,11 @@ export const stylesVar = {
 	// 🌈 Tema (para futuro dark/light mode)
 	themeLight: {
 		bg: "#ffffff",
-		text: "#111",
+		text: "#020217ff",
 		link: "#6a5acd",
 	},
 	themeDark: {
-		bg: "#0a0a0a",
+		bg: "#020217ff",
 		text: "#fbede6",
 		link: "#d7bfff",
 	},

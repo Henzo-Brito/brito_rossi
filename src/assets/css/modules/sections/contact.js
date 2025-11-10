@@ -28,6 +28,26 @@ export const SContact = styled.section`
 		}
 	}
 
+	.line {
+		width: 100%;
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		.l1 {
+			width: 40%;
+			height: 3px;
+			border-radius: 4px;
+			background-color: ${stylesVar.cGrayDark};
+		}
+		p {
+			font-size: 17px;
+			width: 20%;
+			text-align: center;
+		}
+		@media only screen and (max-width: ${stylesVar.breakTablet}){
+			display: flex;
+		}
+	}
 	/* === Lado Esquerdo === */
 	.contact-info {
 		h3 {
@@ -39,6 +59,8 @@ export const SContact = styled.section`
 
 		p {
 			color: ${stylesVar.cTextMuted};
+			font-size: clamp(18px, 2dvw, 22px);
+			text-align: justify;
 			margin-bottom: 30px;
 		}
 
@@ -53,25 +75,28 @@ export const SContact = styled.section`
 			align-items: center;
 			gap: 15px;
 			background: ${stylesVar.cBgDark};
-			padding: 15px 20px;
+			padding: 25px 20px;
 			border-radius: ${stylesVar.borderRadius};
 			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
+			transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+			&:hover {
+				cursor: pointer;
+				transform: translateY(-3px);
+			}
 			img {
 				width: clamp(20px, 10dvw, 40px);
 			}
-			span {
-				font-size: ${stylesVar.fSP};
-			}
 
 			strong {
+				font-size: clamp(18px, 2dvw, 20px);
+				text-align: start;
 				display: block;
-				color: ${stylesVar.cBgLight};
+				color: ${stylesVar.cText};
 			}
 
 			p {
-				font-size: clamp(12px, 2dvw, 20px);
-				color: ${stylesVar.cBgLight};
+				font-size: clamp(13px, 2dvw, 18px);
+				color: ${stylesVar.cTextMuted};
 				margin: 0;
 			}
 		}
@@ -110,6 +135,12 @@ export const SContact = styled.section`
 		border-radius: ${stylesVar.borderRadiusLarge};
 		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 
+		h1 {
+			font-size: clamp(25px, 6dvw, 35px);
+		}
+		@media (max-width: ${stylesVar.breakTablet}) {
+			gap: 10px;
+		}
 		label {
 			display: flex;
 			flex-direction: column;
@@ -131,7 +162,9 @@ export const SContact = styled.section`
 				font-family: ${stylesVar.fFp};
 				background-color: ${stylesVar.cGrayDark};
 				transition: border-color 0.2s ease, box-shadow 0.2s ease;
-
+				@media (max-width: ${stylesVar.breakTablet}) {
+					padding: 7px 8px;
+				}
 				&:focus {
 					border-color: ${stylesVar.cPurple};
 					box-shadow: 0 0 0 3px rgba(106, 90, 205, 0.2);
@@ -161,12 +194,16 @@ export const SContact = styled.section`
 					margin: 20px;
 					padding: 10px;
 					cursor: pointer;
-					background-color: ${stylesVar.cBgLight};
+					background-color: ${stylesVar.cGrayDark};
 					transition: background-color 0.3s;
 					border-radius: 50%;
 					border: 2px solid ${stylesVar.cGrayLight};
+					@media screen and(max-width: ${stylesVar.breakMobile}) {
+						margin: 0;
+						padding: 8px;
+					}
 					&:checked {
-						background-color: ${stylesVar.cPurple};
+						background-color: ${stylesVar.cGrayLight};
 					}
 				}
 				p {
@@ -196,6 +233,7 @@ export const SContact = styled.section`
 			}
 			@media (max-width: ${stylesVar.breakMobile}) {
 				width: 100%;
+				margin: 0;
 			}
 		}
 	}

@@ -10,6 +10,8 @@ import {
 } from "../assets/css/modules/global/header.js";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/images/logo.png";
+
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,8 +32,8 @@ export default function Header() {
             <SHeader>
                 <Link to="/" style={{ width: "auto" }}>
                     <LogoArea>
-                        <LogoBox>BR</LogoBox>
-                        <LogoText>Brito Rossi</LogoText>
+                        <LogoBox><img src={logo} alt="" /></LogoBox>
+                        <LogoText>zen net</LogoText>
                     </LogoArea>
                 </Link>
 

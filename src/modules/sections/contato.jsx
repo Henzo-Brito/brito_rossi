@@ -14,23 +14,7 @@ function InfoCopy(props) {
 	};
 
 	return (
-		<div
-			className="info-item"
-			onClick={handleCopy}
-			style={{
-				cursor: "pointer",
-				display: "flex",
-				alignItems: "center",
-				justifyContent: copied ? "center" : "start",
-				gap: "10px",
-				height: "90px",
-				backgroundColor: "#0a0a0a",
-				color: copied ? "white" : "inherit",
-				borderRadius: "10px",
-				padding: "20px",
-				transition: "all 0.3s ease",
-			}}
-		>
+		<div className="info-item" onClick={handleCopy}>
 			{copied ? (
 				<strong>Copiado para a área de transferência!</strong>
 			) : (
@@ -114,32 +98,37 @@ export default function Contact() {
 						<h3>Vamos conversar?</h3>
 						<p>
 							Conte-nos sobre o seu projeto e receba um orçamento
-							em até 48 horas.
+							personalizado em até 48 horas. Estamos prontos para
+							transformar suas ideias em realidade.
 						</p>
 
 						<div className="info-blocks">
-							<InfoCopy
-								title="Telefone"
-								info="(11) 9 1313-3682"
-							/>
+							<a
+								href="https://wa.me/5511913133682"
+								target="blank"
+								style={{ textAlign: "center" }}
+								className="info-item"
+							>
+								<img src={telefone} alt="Telefone" />
+								<div>
+									<strong>Telefone</strong>
+									<p>(11) 91313-3682</p>
+								</div>
+							</a>
 							<InfoCopy
 								title="E-mail"
 								info="rossipedro2008@gmail.com"
 							/>
-
-							<a
-								href="https://wa.me/5511913133682"
-								target="_blank"
-								rel="noreferrer"
-								className="btn btn-green"
-							>
-								Abrir WhatsApp
-							</a>
 						</div>
 					</div>
-
+					<div className="line">
+						<div className="l1"></div>
+						<p>ou</p>
+						<div className="l1"></div>
+					</div>
 					{/* === Lado Direito === */}
 					<form className="form" onSubmit={handleSubmit}>
+						<h1>Conte a sua Proposta</h1>
 						<label>
 							Nome
 							<input

@@ -42,35 +42,20 @@ export const LogoArea = styled.div`
 `;
 
 export const LogoBox = styled.div`
-	width: clamp(38px, 8vw, 55px);
-	height: clamp(38px, 8vw, 55px);
-	border-radius: 10px;
-	padding: 8px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	font-size: ${stylesVar.fSH1};
-	background: ${stylesVar.cPurple};
-	color: ${stylesVar.cWhite};
+	width: clamp(50px, 8vw, 55px);
 	transition: transform 0.25s ease, background 0.3s ease;
 
 	&:hover {
-		background: ${stylesVar.cHover};
-		transform: rotate(-2deg) scale(1.05);
+		transform: rotate(-9deg) scale(1.08);
 	}
 `;
 
 export const LogoText = styled.h2`
 	font-family: ${stylesVar.fFH1};
-	font-size: clamp(18px, 3vw, 22px);
-	font-weight: 600;
+	font-size: clamp(25px, 4vw, 35px);
 	color: ${stylesVar.cWhite};
 	text-transform: uppercase;
 
-	@media (max-width: 420px) {
-		font-size: clamp(16px, 4vw, 18px);
-	}
 `;
 
 // ===== NAVEGAÇÃO =====

@@ -3,7 +3,7 @@ import { stylesVar } from "../../styleVar";
 
 export const SSection = styled.section`
 	padding: 100px 0;
-	background: ${stylesVar.cBgDark};
+	background: ${stylesVar.cBgLight};
 	color: ${stylesVar.cText};
 	text-align: center;
 	animation: fadeIn 0.56s ease forwards;
@@ -44,7 +44,7 @@ export const SSection = styled.section`
 		background: ${stylesVar.cGrayDark};
 		border: 1px solid ${stylesVar.borderColor};
 		border-radius: ${stylesVar.borderRadiusLarge};
-		padding: 40px 25px;
+		padding: 40px 25px 0 25px;
 		transition: all 0.3s ease;
 		display: flex;
 		align-items: center;
@@ -59,10 +59,8 @@ export const SSection = styled.section`
 			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 		}
 
-		.icon {
-			font-size: 2rem;
-			color: ${stylesVar.cPurple};
-			margin-bottom: 15px;
+		img{
+			width: 50px;
 		}
 
 		h4 {

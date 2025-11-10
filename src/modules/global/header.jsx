@@ -9,6 +9,8 @@ import {
 	MobileMenu,
 } from "../../assets/css/modules/global/header.js";
 
+import logo from "../../assets/images/logo.png";
+
 export default function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
 
@@ -36,8 +38,8 @@ export default function Header() {
 					onClick={(e) => handleScroll(e, "hero")}
 				>
 					<LogoArea>
-						<LogoBox>BR</LogoBox>
-						<LogoText>Brito Rossi</LogoText>
+						<LogoBox><img src={logo} alt="" /></LogoBox>
+						<LogoText>zen net</LogoText>
 					</LogoArea>
 				</a>
 

@@ -170,8 +170,8 @@ export const HeroBadge = styled.div`
 	bottom: clamp(16px, 2vw, 24px);
 	left: clamp(16px, 2vw, 24px);
 	width: clamp(220px, 40vw, 340px);
-	background: rgba(57, 36, 126, 0.7);
-	backdrop-filter: blur(10px);
+	background: rgba(47, 47, 211, 0.77);
+	backdrop-filter: blur(5px);
 	padding: clamp(10px, 2vw, 16px);
 	border-radius: ${stylesVar.borderRadius};
 

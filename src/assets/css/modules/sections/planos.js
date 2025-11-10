@@ -8,7 +8,7 @@ export const SPlanos = styled.section`
 	text-align: center;
 
 	@media only screen and (max-width: ${stylesVar.breakMobile}) {
-		padding: 20px 0px;
+		padding: 40px 0px;
 	}
 
 	.container {
@@ -47,10 +47,13 @@ export const SPlanos = styled.section`
 	}
 
 	.plan {
-		background: ${stylesVar.cGrayDark};
+		background: rgba(47, 23, 255, 0.72);
 		border: 1px solid ${stylesVar.borderColor};
 		border-radius: ${stylesVar.borderRadiusLarge};
 		display: flex;
+		border: 1px solid ${stylesVar.borderColor};
+		backdrop-filter: blur(10px);
+
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
@@ -58,7 +61,8 @@ export const SPlanos = styled.section`
 		transition: all 0.3s ease;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 		@media (max-width: ${stylesVar.breakMobile}) {
-			padding: 15px;
+			padding: 25px 20px;
+			border: 2px solid ${stylesVar.borderColor};
 		}
 		&:hover {
 			transform: translateY(-6px);
@@ -66,16 +70,9 @@ export const SPlanos = styled.section`
 			box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 		}
 
-		h4 {
-			font-family: ${stylesVar.fFH1};
-			font-size: ${stylesVar.fHeroTitle};
-			color: ${stylesVar.cWhite};
-			margin-bottom: 15px;
-		}
-
 		.price {
-			font-size: clamp(24px, 3vw, 32px);
-			color: ${stylesVar.cPurple};
+			font-size: clamp(30px, 3vw, 35px);
+			color: ${stylesVar.cWhite};
 			font-weight: 700;
 			margin-bottom: 25px;
 		}
@@ -85,7 +82,7 @@ export const SPlanos = styled.section`
 			margin-bottom: 30px;
 
 			li {
-				color: ${stylesVar.cTextMuted};
+				color: ${stylesVar.cText};
 				margin-bottom: 8px;
 			}
 		}
@@ -100,26 +97,17 @@ export const SPlanos = styled.section`
 			transition: 0.3s ease;
 
 			&.btn-dark {
-				background: ${stylesVar.cPurple};
-				color: ${stylesVar.cBgLight};
+				background: ${stylesVar.cGrayDark};
+				color: ${stylesVar.cWhite};
 
 				&:hover {
 					background: ${stylesVar.cHover};
 				}
 			}
 
-			&.btn-green {
-				background: ${stylesVar.cOrange};
-				color: ${stylesVar.cWhite};
-
-				&:hover {
-					filter: brightness(1.1);
-				}
-			}
-
 			&.btn-light {
-				background: ${stylesVar.cPurple};
-				color: ${stylesVar.cBgLight};
+				background: ${stylesVar.cGrayDark};
+				color: ${stylesVar.cWhite};
 
 				&:hover {
 					background: ${stylesVar.cHover};
@@ -143,11 +131,11 @@ export const SPlanos = styled.section`
 			}
 
 			.btn {
-				background: ${stylesVar.cWhite};
-				color: ${stylesVar.cBlack};
+				background: ${stylesVar.cGrayDark};
+				color: ${stylesVar.cText};
 
 				&:hover {
-					background: ${stylesVar.cGrayLight};
+					background: ${stylesVar.cBgDark};
 				}
 			}
 		}

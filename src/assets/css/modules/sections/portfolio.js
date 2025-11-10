@@ -22,7 +22,7 @@ export const SPortfolio = styled.section`
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		filter: blur(60px);
+		filter: blur(20px);
 		transform: scale(1.1);
 		z-index: 0;
 	}

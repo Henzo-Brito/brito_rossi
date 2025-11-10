@@ -6,7 +6,7 @@ export default function Planos() {
 			<div className="container">
 				<header className="fade-in">
 					<h3>Planos de Pagamento</h3>
-					<p>Preços transparentes para começar rápido.</p>
+					<p>Planos flexíveis e acessíveis, com opções mensais, trimestrais e anuais. Escolha o que melhor se adapta às suas necessidades.</p>
 				</header>
 
 				<div className="grid">
